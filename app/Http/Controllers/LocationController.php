@@ -14,7 +14,7 @@ class LocationController extends Controller
     }
 
     public function manageLocation(Request $request){
-        $perPage = $request->input('per_page', 5); // รับค่าจำนวนรายการต่อหน้า หากไม่ได้ระบุค่าให้ใช้ค่าเริ่มต้นคือ 10
+        $perPage = $request->input('per_page', 5); // รับค่าจำนวนรายการต่อหน้า หากไม่ได้ระบุค่าให้ใช้ค่าเริ่มต้นคือ 10 xxx
         $rec_location = DB::table("location")->paginate($perPage);
         return view('page.backend.location-management', ['rec_location' => $rec_location, 'perPage' => $perPage]);  
     }          
