@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 //                             ]);
 // });
 
-Route::get('/home',[HomeController::class,'home']);
+Route::get('/home', [HomeController::class, 'home']);
 
 Route::get('/master', fn () => view('page.backend.master'));
 
@@ -39,13 +39,13 @@ Route::get('/master', fn () => view('page.backend.master'));
 // Route::post('/update-location',[LocationController::class,'updateLocation']);
 // Route::get('/delete-location/{id}',[LocationController::class,'deleteLocation']);
 
-Route::controller(LocationController::class)->group(function(){
-    Route::get('/manage-location','manageLocation');
-    Route::get('/add-location','addLocation');
-    Route::get('/edit-location/{id}','editLocation');
-    Route::post('/insert-location','insertLocation');
-    Route::post('/update-location','updateLocation');
-    Route::get('/delete-location/{id}','deleteLocation');
+Route::controller(LocationController::class)->group(function () {
+    Route::get('/manage-location', 'manageLocation');
+    Route::get('/add-location', 'addLocation');
+    Route::get('/edit-location/{id}', 'editLocation');
+    Route::post('/insert-location', 'insertLocation');
+    Route::post('/update-location', 'updateLocation');
+    Route::get('/delete-location/{id}', 'deleteLocation');
 });
 
 
@@ -61,5 +61,5 @@ Route::controller(LocationController::class)->group(function(){
 
 
 Route::get('/backend', function () {
-    return view('page.backend.home-backend');  
+    return view('page.backend.home-backend');
 });

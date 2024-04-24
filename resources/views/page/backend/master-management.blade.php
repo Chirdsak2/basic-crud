@@ -1,5 +1,5 @@
 <div class="content-wrapper">
-    <div class="container-fluid" style="padding: 30px">         
+    <div class="container-fluid" style="padding: 30px">
         <div class="row">
             <div class="col-sm-8">
                 <div class="main-header">
@@ -10,12 +10,12 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="card">
-                <div class="card-body">
-                    <a href="{{ url("manage-location") }}" class="zoom-on-hover">
-                        <img src="{{ url("image/icon-1.png") }}" alt="...">
-                    </a>
-                    <p class="card-text" align="center">บริหารรายการสถานที่ท่องเที่ยว</p>
-                </div>
+                    <div class="card-body">
+                        <a href="{{ url('manage-location') }}" class="zoom-on-hover">
+                            <img src="{{ url('image/icon-1.png') }}" alt="...">
+                        </a>
+                        <p class="card-text" align="center">บริหารรายการสถานที่ท่องเที่ยว</p>
+                    </div>
                 </div>
             </div>
             {{-- <div class="col-sm-3">
